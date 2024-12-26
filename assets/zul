@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semangat Revisi Skripsi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #6dd5ed, #2193b0);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        position: relative;
+      }
+
+      .message {
+        font-size: 2rem;
+        animation: fadeIn 3s infinite alternate;
+      }
+
+      .icon {
+        font-size: 5rem;
+        margin: 20px 0;
+        animation: bounce 2s infinite;
+      }
+
+      .bubble {
+        position: absolute;
+        bottom: -50px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: rise 5s infinite;
+      }
+
+      .bubble:nth-child(1) {
+        left: 20%;
+        animation-duration: 4s;
+        animation-delay: 0s;
+      }
+
+      .bubble:nth-child(2) {
+        left: 40%;
+        animation-duration: 5s;
+        animation-delay: 1s;
+      }
+
+      .bubble:nth-child(3) {
+        left: 60%;
+        animation-duration: 6s;
+        animation-delay: 2s;
+      }
+
+      .bubble:nth-child(4) {
+        left: 80%;
+        animation-duration: 4.5s;
+        animation-delay: 0.5s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes rise {
+        from {
+          bottom: -50px;
+          opacity: 0;
+        }
+        to {
+          bottom: 100%;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message">For zulfi irkamni</div>
+      <div class="message">Satu Satunya</div>
+      <div class="message">💪 Semangat! Revisi ini adalah langkah terakhir menuju kelulusan! 🎓</div>
+      <div class="icon">🚀</div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+    <script>
+      // Custom JavaScript (if needed) could go here, but for this example, CSS handles most of the animation.
+      console.log("Keep going, you're doing great!");
+    </script>
+  </body>
+</html>
