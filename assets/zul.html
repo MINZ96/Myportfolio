@@ -9,7 +9,7 @@
             font-family: 'Montserrat', sans-serif; /* Using Montserrat for a modern look */
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1); /* More vibrant background */
             color: white;
             display: flex;
             align-items: center;
@@ -22,34 +22,36 @@
             text-align: center;
             position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
         .message {
-            font-size: 2rem;
-            font-weight: 600; /* Add weight to the text */
-            margin-bottom: 10px; /* Add spacing between messages */
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for better readability */
+            font-size: 2.5rem; /* Larger font size */
+            font-weight: 700; /* Bolder text */
+            margin-bottom: 20px; /* More spacing between messages */
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow for better readability */
             animation: fadeIn 3s infinite alternate;
+            color: #ffd700; /* Bright yellow color */
         }
 
         .icon {
-            font-size: 5rem;
-            margin: 20px 0;
-            color: #fff; /* Ensure icon color is white */
-            animation: bounce 2s infinite;
+            font-size: 6rem; /* Larger icon */
+            margin: 30px 0;
+            color: #ff6f61; /* Vibrant color for icon */
+            animation: bounce 1.5s infinite;
         }
 
         .poto {
-            width: 100px; /* Increased size for better visibility */
-            height: 100px;
+            width: 150px; /* Increased size for better visibility */
+            height: 150px;
             border-radius: 50%; /* Make the photo circular */
             overflow: hidden; /* Hide overflow for circular shape */
-            margin: 20px 0;
-            animation: bounce 2s infinite;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+            margin: 30px 0;
+            animation: bounce 1.5s infinite;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow */
         }
 
         .poto img {
@@ -61,14 +63,18 @@
         .bubble {
             position: absolute;
             bottom: -50px;
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.7); /* More opaque bubbles */
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            animation: rise 5s infinite;
+            width: 30px; /* Larger bubbles */
+            height: 30px;
+            animation: rise 4s infinite;
         }
 
-        /* ... (bubble positioning and animation) ... */
+        /* Bubble positioning */
+        .bubble:nth-child(1) { left: 25%; animation-duration: 4s; }
+        .bubble:nth-child(2) { left: 50%; animation-duration: 5s; }
+        .bubble:nth-child(3) { left: 75%; animation-duration: 6s; }
+        .bubble:nth-child(4) { left: 90%; animation-duration: 7s; }
 
         @keyframes fadeIn {
             from {
@@ -85,7 +91,7 @@
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-30px);
             }
         }
 
@@ -103,10 +109,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="message">For zulfi irkhamni</div>
-        <div class="message">Satu Satunya😁</div>
-        <div class="message">💪 Semangat! Revisi ini adalah langkah terakhir menuju kelulusan! 🎓</div>
-        <div class="icon">🚀</div>
+        <div class="message">Believe in yourself! 🌟</div>
+        <div class="message">You are capable of amazing things! 💪</div>
+        <div class="message">Never give up! Keep pushing forward! 🚀</div>
+        <div class="icon">🎉</div>
         <div class="poto">
             <img src="./images/zul.jpg" alt="zul">
         </div>
